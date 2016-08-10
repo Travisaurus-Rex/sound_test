@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="node_modules/components-font-awesome/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="public/css/style.css"/> 
+    </head>
+    <body>
+        <div id="page">
+            <div id="content-block">
+            <div id="logo">
+                <img src="public/images/logo.png"/>
+            </div>
+            <div id="load-error" class="center-width">
+                
+            </div>
+        	    <div id="content">
+        	    	<button id="getMusic">GET MUSIC</button>
+        	    	<div id="song-box">
+                        <div id="image" class="share"> 
+                        </div> 
+
+                        <div id="song-text" class="share">
+                            <h1>no song loaded</h1>
+                            <h3 id="artist-name"></h3>
+
+                            <div id="info" class="share">
+                                <h3></h3>
+                            </div>
+                        </div>
+
+                        <div id="audio-row">
+                            <div id="song-info">
+                                 <div id="like"></div>
+                                <div id="song-icon"></div>
+                            </div>
+                                
+                            <audio id="music" ontimeupdate="Player.updateState()"></audio>    
+                            <div id="audioplayer">
+                                <div id='play-container'>
+                                    <button id="playpause" onclick="Player.playMusic()"><i class="fa fa-play"></i></button>
+                                </div>
+                                <div id='progress-area'>
+                                    <div id='progress-bar'><i id="playhead" class="fa fa-circle"></i></div>
+                                </div>
+                            </div>
+                        </div>
+        	    </div>
+                <div class="center-width">
+                    <a href="https://www.soundcloud.com" target="_blank"><img id="powd" src="public/images/powered.png"/></a>
+                </div>
+            </div>
+        </div>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+    <script src="app/lib/WIDGET-JS-API/soundcloud.player.api.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <script src="app/lib/jquery/dist/jquery.min.js"></script>
+    <script src="dist/arrays.js"></script>
+    <script src="dist/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "soundcloud_rain",
+  "version": "1.0.0",
+  "description": "Discover new music",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "components-font-awesome": "^4.6.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.2",
+    "pump": "^1.0.1"
+  }
+}
